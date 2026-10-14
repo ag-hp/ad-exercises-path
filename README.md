@@ -126,6 +126,13 @@
 
 ---
 
+12. Observa en las diapositivas de la parte 1 de esta unidad algunas de las clases de excepciones que ofrece Java para la E/S. Modifica el código de los ejercicios anteriores para tratar las distintas excepciones de un modo específico (por ejemplo, ahora en vez de capturar IOException capturarías de forma separada FileAlreadyExistsException)
+13. Investiga en qué consiste el try with resources. ¿En qué versión de java apareció esta estructura de control? Codifica y prueba los ejemplos de try y  try with resources que se muestran en las diapositivas. ¿Qué ventajas e inconvenientes encuentras?
+14. Hemos visto en este tema que la interfaz Path y la clase Files son inmutables. Explica con tus propias palabras el concepto de INMUTABILIDAD. 
+15. En parejas, comparte con tu compañer@ tu opinión sobre las buenas prácticas en la gestión de ficheros. ¿Añadirías o eliminarías alguna de ellas? ¿Por qué? Ordénalas de la más importante a la menos importante según tu criterio. Si sólo pudieras asegurar el cumplimiento de una de esas buenas prácticas  ¿cuál elegirías y por qué?  Discute y defiende tu elección frente a tu compañer@.
+
+---
+
 <p align="center">
   <a href="https://github.com/ag-hp/dam.git"><img src="https://img.shields.io/badge/VER_REPOSITORIO_COMPLETO-DESARROLLO_DE_APLICACIONES_MULTIPLATAFORMA-238636?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" alt="Ver Repositorio Completo Desarrollo de Aplicaciones Multiplataforma"></a>
 </p>
