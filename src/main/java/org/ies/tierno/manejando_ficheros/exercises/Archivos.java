@@ -1,6 +1,7 @@
 package org.ies.tierno.manejando_ficheros.exercises;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import static java.nio.file.Files.exists;
@@ -97,7 +98,19 @@ public class Archivos {
     */
 
     // 7.
+    public boolean crearFicheroIO(String nombreFichero) throws IOException {
+        File fichero = new File(nombreFichero);
+        return fichero.createNewFile();
+    }
 
+    public boolean crearFicheroNIO(String nombreFichero) throws IOException {
+        Path fichero = Path.of(nombreFichero);
+        if (!Files.exists(fichero)) {
+            Files.createFile(fichero);
+            return true;
+        }
+        return false;
+    }
 
     // 8.
 
