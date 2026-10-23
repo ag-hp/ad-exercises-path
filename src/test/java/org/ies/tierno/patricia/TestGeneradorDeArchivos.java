@@ -1,5 +1,7 @@
 package org.ies.tierno.patricia;
 
+import org.ies.tierno.patricia.correcciones.GeneradorDeArchivos;
+
 public class TestGeneradorDeArchivos
 {
 	public static void main(String[] args)
