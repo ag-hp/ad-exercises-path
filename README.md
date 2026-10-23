@@ -75,7 +75,7 @@
 
 <h4>3. Repite los ejercicios 1 y 2 utilizando las clases del paquete java.nio.files (necesitarás las interfaces Path y Files).</h4>
 
-<p><em>Sugerencia: para empezar, apóyate en el ejemplo de manejo de NIO que estudiamos en class
+<p><em>Sugerencia: para empezar, apóyate en el ejemplo de manejo de NIO que estudiamos en clase</em></p>
 
 ---
 
@@ -126,10 +126,46 @@
 
 ---
 
-12. Observa en las diapositivas de la parte 1 de esta unidad algunas de las clases de excepciones que ofrece Java para la E/S. Modifica el código de los ejercicios anteriores para tratar las distintas excepciones de un modo específico (por ejemplo, ahora en vez de capturar IOException capturarías de forma separada FileAlreadyExistsException)
-13. Investiga en qué consiste el try with resources. ¿En qué versión de java apareció esta estructura de control? Codifica y prueba los ejemplos de try y  try with resources que se muestran en las diapositivas. ¿Qué ventajas e inconvenientes encuentras?
-14. Hemos visto en este tema que la interfaz Path y la clase Files son inmutables. Explica con tus propias palabras el concepto de INMUTABILIDAD. 
-15. En parejas, comparte con tu compañer@ tu opinión sobre las buenas prácticas en la gestión de ficheros. ¿Añadirías o eliminarías alguna de ellas? ¿Por qué? Ordénalas de la más importante a la menos importante según tu criterio. Si sólo pudieras asegurar el cumplimiento de una de esas buenas prácticas  ¿cuál elegirías y por qué?  Discute y defiende tu elección frente a tu compañer@.
+<h4>12. Observa en las diapositivas de la parte 1 de esta unidad algunas de las clases de excepciones que ofrece Java para la E/S. Modifica el código de los ejercicios anteriores para tratar las distintas excepciones de un modo específico (por ejemplo, ahora en vez de capturar IOException capturarías de forma separada FileAlreadyExistsException)</h4>
+
+---
+
+<h4>13. Investiga en qué consiste el try with resources. ¿En qué versión de java apareció esta estructura de control? Codifica y prueba los ejemplos de try y try with resources que se muestran en las diapositivas. ¿Qué ventajas e inconvenientes encuentras?</h4>
+
+---
+
+<h4>14. Hemos visto en este tema que la interfaz Path y la clase Files son inmutables. Explica con tus propias palabras el concepto de INMUTABILIDAD.</h4>
+
+---
+
+<h4>15. En parejas, comparte con tu compañer@ tu opinión sobre las buenas prácticas en la gestión de ficheros. ¿Añadirías o eliminarías alguna de ellas? ¿Por qué? Ordénalas de la más importante a la menos importante según tu criterio. Si sólo pudieras asegurar el cumplimiento de una de esas buenas prácticas ¿cuál elegirías y por qué? Discute y defiende tu elección frente a tu compañer@.</h4>
+
+---
+
+<h4>16. Codifica una clase llamada ReadTextFile con un main que:</h4>
+
+1. Pida al usuario la ruta de un archivo
+2. Lea el contenido de ese archivo y lo muestre en pantalla
+3. Si el archivo no existe (se producirá la excepción FileNotFoundException (IO) o NoSuchFileException (NIO)), muestra el texto "Archivo no encontrado"
+4. En caso de que se produzca alguna otra excepción durante la ejecución del programa, muestra el error "Error de E/S" junto con la stackTrace
+
+---
+
+<h3>Ejercicios de lectura y escritura de ficheros</h3>
+
+<h4>Ejercicio 1</h4>
+
+<p>Codificar la clase MaquinaDeEscribir. Debe tener un método que reciba un array de cadenas de caracteres y deposite su contenido a un fichero cuyo nombre recibe por parámetro. Las cadenas quedarán separadas en el archivo por un asterisco.</p>
+
+<p>Realizar un tratamiento de de excepciones adecuado.</p>
+
+---
+
+<h4>Ejercicio 2</h4>
+
+<p>Añadir a la clase anterior un método que reciba por parámetro el nombre de un archivo e imprima en pantalla las cadenas que dicho archivo contiene (una cadena por línea). Se tendrá en cuenta que las distintas cadenas están separadas en el archivo por un asterisco (que no se imprimirá).</p>
+
+<p>Realizar un tratamiento de de excepciones adecuado.</p>
 
 ---
 
