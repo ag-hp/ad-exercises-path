@@ -159,8 +159,6 @@
 
 <p>Realizar un tratamiento de de excepciones adecuado.</p>
 
----
-
 <h4>Ejercicio 2</h4>
 
 <p>Añadir a la clase anterior un método que reciba por parámetro el nombre de un archivo e imprima en pantalla las cadenas que dicho archivo contiene (una cadena por línea). Se tendrá en cuenta que las distintas cadenas están separadas en el archivo por un asterisco (que no se imprimirá).</p>
