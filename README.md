@@ -151,9 +151,21 @@ h4>3. Repite los ejercicios 1 y 2 utilizando las clases del paquete java.nio.fil
 
 <p>Realizar un tratamiento de de excepciones adecuado.</p>
 
----
+<h3>Ejercicio 3: Generador de facturas</h3>
 
+<p>Codificar un programa que cree facturas en ficheros .txt.</p>
 
+<p>El programa solicita al usuario parejas importe - iva.</p>
+
+<p>La introducción de datos finaliza cuando el usuario introduce un cero. El IVA sólo puede valer 10% o 21%, en otro caso se rechaza tanto el importe como el iva introducido.</p>
+
+<p>Cuando el usuario introduce el valor cero en el importe (independientemente del iva introducido) termina la entrada de datos y se genera la factura.</p>
+
+<p>La factura debe mostrar cada importe y su iva (una pareja por línea) y al final el total de la suma de los importes y el total (suma) de las cantidades resultantes de aplicar el iva a cada importe (es decir el iva total).</p>
+
+<h3>Ejercicio 4: Generador de facturas mejorado</h3>
+
+<p>Sobre el ejercicio anterior, implementa un mecanismo para guardar las facturas en ficheros con números consecutivos. El programa debe soportar que podamos generar facturas (por ejemplo, generamos 3 facturas de nombres fact1.txt, fact2.txt, fact3.txt) que lo cerremos, lo volvamos a abrir y no se pierda el número de secuencia (es decir, la siguiente factura generada sería fact4.txt).</p>
 
 ---
 
