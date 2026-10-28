@@ -50,12 +50,28 @@
 
 <p>Aquí os dejo una lista de los métodos más usados de de la clase File…</p>
 
-<!-- Poner imagen aquí -->
-<p align="center">
-  
-</p>
-  <img width="1483" height="853" alt="chuleta_mtodos_clase_file" src="https://github.com/user-attachments/assets/0e93f530-d4fd-4f3b-8007-cf4983be155d" />
-<br>
+<h3>Manejando Ficheros</h3>
+
+<p>Aquí os dejo una lista de los métodos más usados de la clase File…</p>
+
+| NOMBRE | DESCRIPCIÓN | PARÁMETROS | DATO DEVUELTO |
+| :--- | :--- | :--- | :--- |
+| `exists` | Indica si existe o no el fichero apuntado por File. | Ninguno | `boolean` |
+| `isDirectory` | Indica si el objeto apuntado por File es un directorio. | Ninguno | `boolean` |
+| `isFile` | Indica si el objeto apuntado por File es un fichero. | Ninguno | `boolean` |
+| `isHidden` | Indica si el objeto apuntado por File está oculto. | Ninguno | `boolean` |
+| `getAbsolutePath` | Devuelve una cadena con la ruta absoluta del fichero o directorio. | Ninguno | `String` |
+| `canRead` | Indica si se puede leer. | Ninguno | `boolean` |
+| `canWrite` | Indica si se puede escribir. | Ninguno | `boolean` |
+| `canExecute` | Indica si se puede ejecutar. | Ninguno | `boolean` |
+| `delete` | Borra el fichero o directorio apuntado por File. El directorio debe estar vacío para poder borrarlo. | Ninguno | `boolean` |
+| `getName` | Devuelve una cadena con el nombre del fichero o directorio. | Ninguno | `String` |
+| `getParent` | Devuelve una cadena con el directorio padre. | Ninguno | `String` |
+| `listFiles` | Devuelve un array de Files que apuntan a los directorios hijos. Solo funciona con directorios. | Ninguno | `Array de File` |
+| `list` | Devuelve un array de String con los nombres de los directorios hijos. Solo funciona con directorios. | Ninguno | `Array de String` |
+| `mkdir` | Permite crear el directorio en la ruta indicada. Solo se creará si no existe. | Ninguno | `boolean` |
+| `mkdirs` | Permite crear el directorio en la ruta indicada, también crea los directorios intermedios. Solo se creará si no existe. | Ninguno | `boolean` |
+| `createNewFile` | Permite crear el fichero en la ruta indicada. Solo se creará si no existe. Debemos controlar la excepción con IOException. | Ninguno | `boolean` |
 
 ---
 
