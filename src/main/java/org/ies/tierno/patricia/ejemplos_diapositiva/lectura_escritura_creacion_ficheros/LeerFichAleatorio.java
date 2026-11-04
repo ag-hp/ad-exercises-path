@@ -16,7 +16,7 @@ public class LeerFichAleatorio {
         int posicion = 0; // Para situarnos al principio
 
         while (file.getFilePointer() < file.length()) {
-            file.seek(posicion); // Nos posicionamos en el
+            file.seek(posicion); // Nos posicionamos en el registro
             id = file.readInt();
 
             //  Recorro uno a uno los caracteres del apellido
@@ -31,9 +31,12 @@ public class LeerFichAleatorio {
 
             if (id > 0){
                 System.out.printf(
-                        "ID: %s, Apellido: %s, Departamento %d, id, apellidos.trim(), departamento, salario"
+                        "ID: %s, Apellido: %s, Departamento %d, Salario: %.2f %n",
+                        id, apellidos.trim(), departamento, salario
                 );
             }
+            // Me posiciono en el siguiente empleado (cada uno ocupa 36 bytes)
+            posicion = posicion + 36;
         }
         file.close();
     }
