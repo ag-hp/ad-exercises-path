@@ -6,7 +6,7 @@ import java.io.RandomAccessFile;
 
 public class EscribirFichAleatorio {
     public static void main(String[] args) throws IOException {
-        File fichero = new File("Aleatorio.dat");
+        File fichero = new File("AleatorioEmple.dat");
         RandomAccessFile file = new RandomAccessFile(fichero, "rw");
 
         String apellidos[] = {"FERNANDEZ", "GIL", "LOPEZ", "RAMOS", "SEVILLA", "CASILLA", "REY"};
