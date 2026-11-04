@@ -9,9 +9,9 @@ public class LeerFichAleatorio {
         File fichero = new File("Aleatorio.dat");
         RandomAccessFile file = new RandomAccessFile(fichero, "rw");
 
-        int id, departamentos;
-        double salarios;
-        char apellidos[] = new char[10];
+        int id, departamento;
+        double salario;
+        char apellido[] = new char[10];
         char letra;
         int posicion = 0; // Para situarnos al principio
 
@@ -20,9 +20,19 @@ public class LeerFichAleatorio {
             id = file.readInt();
 
             //  Recorro uno a uno los caracteres del apellido
-            for (int i = 0; i < apellidos.length; i++) {
+            for (int i = 0; i < apellido.length; i++) {
                 letra = file.readChar();
-                apellidos[i] = letra;
+                apellido[i] = letra;
+            }
+
+            String apellidos = new String(apellido);
+            departamento = file.readInt();
+            salario = file.readDouble();
+
+            if (id > 0){
+                System.out.printf(
+                        "ID: %s, Apellido: %s, Departamento %d, id, apellidos.trim(), departamento, salario"
+                );
             }
         }
         file.close();
